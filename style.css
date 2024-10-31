@@ -6,23 +6,35 @@
     text-align:center;
 }
 #myDiv{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    width: 90%;
+    max-width: 100%;
     margin: auto;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 20px;
-    width: 400px;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
+.PracB{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    padding: 30px 10px;
+    
+
+}
+.imgpra{
+    object-fit: cover;
+    max-width: 90%;
+    height: 90%;
+}
 button{
     margin: 10px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
 }
 #myButton1{
     
@@ -36,7 +48,8 @@ button{
     border-radius: 5px;
     box-shadow: 5px 5px 0px black;
     transition: all 0.3s ease;
-  }
+    cursor: pointer;
+}
 #myButton1:hover{
     background-color: #fff;
     color: red;
@@ -45,7 +58,6 @@ button{
 }
 #myButton1:active{
     transform: translateY(4px);
-
 }
 
 #myButton2{
@@ -60,7 +72,7 @@ button{
     border-radius: 5px;
     box-shadow: 5px 5px 0px black;
     transition: all 0.3s ease;
-  }
+}
 #myButton2:hover{
     background-color: #fff;
     color: red;
@@ -84,7 +96,7 @@ button{
     border-radius: 5px;
     box-shadow: 5px 5px 0px black;
     transition: all 0.3s ease;
-  }
+}
 #myButton3:hover{
     background-color: #fff;
     color: red;
@@ -108,7 +120,7 @@ button{
     border-radius: 5px;
     box-shadow: 5px 5px 0px black;
     transition: all 0.3s ease;
-  }
+}
 #myButton4:hover{
     background-color: #fff;
     color: red;
@@ -116,6 +128,54 @@ button{
     /*transform: translateY(-5px);*/
 }
 #myButton4:active{
+    transform: translateY(4px);
+
+}
+
+#myButton5{
+    
+    padding: 10px 80px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #34a853;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0px black;
+    transition: all 0.3s ease;
+}
+#myButton5:hover{
+    background-color: #fff;
+    color: red;
+    box-shadow: 5px 5px 0px red;
+    /*transform: translateY(-5px);*/
+}
+#myButton5:active{
+    transform: translateY(4px);
+
+}
+
+#myButton6{
+    
+    padding: 10px 80px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #34a853;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0px black;
+    transition: all 0.3s ease;
+}
+#myButton6:hover{
+    background-color: #fff;
+    color: red;
+    box-shadow: 5px 5px 0px red;
+    /*transform: translateY(-5px);*/
+}
+#myButton6:active{
     transform: translateY(4px);
 
 }
