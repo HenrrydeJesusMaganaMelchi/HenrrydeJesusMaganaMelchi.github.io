@@ -15,3 +15,11 @@ document.getElementById("myButton4").onclick = function() {
     // Redirige a la página especificada
     window.location.href = "Practicas/Practica 4.html";
   };
+  document.getElementById("myButton5").onclick = function() {
+    // Redirige a la página especificada
+    window.location.href = "Practicas/Practica 5.html";
+  };
+  document.getElementById("myButton6").onclick = function() {
+    // Redirige a la página especificada
+    window.location.href = "Practicas/Practica 6.html";
+  };
