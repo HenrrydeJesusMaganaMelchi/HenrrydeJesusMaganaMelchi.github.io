@@ -23,3 +23,7 @@ document.getElementById("myButton4").onclick = function() {
     // Redirige a la página especificada
     window.location.href = "Practicas/Practica 6.html";
   };
+document.getElementById("myButton7").onclick = function() {
+    // Redirige a la página especificada
+    window.location.href = "Practicas_php/Practica1_php.php";
+  };
