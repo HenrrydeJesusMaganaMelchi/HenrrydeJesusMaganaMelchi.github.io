@@ -23,8 +23,20 @@ document.getElementById("myButton4").onclick = function() {
     // Redirige a la página especificada
     window.location.href = "Practicas/Practica 6.html";
   };
+
+
+
+
+  /*Practicas de PHP*/
 document.getElementById("myButton7").onclick = function() {
     // Redirige a la página especificada
-    window.location.href = "..php/Practica1_php.php";
+    window.location.href = "php/Practica1_php.php";
   };
-  
+  document.getElementById("myButton8").onclick = function() {
+    // Redirige a la página especificada
+    window.location.href = "php/Practica2_php.php";
+  };
+  document.getElementById("myButton9").onclick = function() {
+    // Redirige a la página especificada
+    window.location.href = "php/Practica3_php.php";
+  };
