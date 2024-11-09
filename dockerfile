@@ -1,4 +1,4 @@
-un Dockerfile que garantice que Apache pueda servir correctamente tanto los archivos HTML como PHP.
+Run Dockerfile que garantice que Apache pueda servir correctamente tanto los archivos HTML como PHP.
 
 dockerfile
 Copiar código
