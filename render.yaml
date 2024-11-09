@@ -1,0 +1,14 @@
+# Archivo de configuración para Render
+services:
+  - type: web
+    name: mi-tienda-en-linea
+    env: docker
+    plan: free
+    branch: main
+    buildCommand: ""
+    startCommand: ""
+    envVars:
+      - key: PORT
+        value: 8080
+    dockerfilePath: ./Dockerfile
+    
