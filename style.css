@@ -216,3 +216,51 @@ button{
     transform: translateY(4px);
 
 }
+
+#myButton8{
+    
+    padding: 10px 80px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #34a853;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0px black;
+    transition: all 0.3s ease;
+}
+#myButton8:hover{
+    background-color: #fff;
+    color: red;
+    box-shadow: 5px 5px 0px red;
+    /*transform: translateY(-5px);*/
+}
+#myButton8:active{
+    transform: translateY(4px);
+
+}
+
+#myButton9{
+    
+    padding: 10px 80px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #34a853;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0px black;
+    transition: all 0.3s ease;
+}
+#myButton9:hover{
+    background-color: #fff;
+    color: red;
+    box-shadow: 5px 5px 0px red;
+    /*transform: translateY(-5px);*/
+}
+#myButton9:active{
+    transform: translateY(4px);
+
+}

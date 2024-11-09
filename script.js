@@ -28,7 +28,7 @@ document.getElementById("myButton4").onclick = function() {
 
 
   /*Practicas de PHP*/
-document.getElementById("myButton7").onclick = function() {
+  document.getElementById("myButton7").onclick = function() {
     // Redirige a la página especificada
     window.location.href = "php/Practica1_php.php";
   };
