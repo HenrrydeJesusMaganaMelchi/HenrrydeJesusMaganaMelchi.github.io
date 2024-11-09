@@ -4,8 +4,8 @@ FROM php:8.2-apache
 # Instalar las extensiones necesarias de PHP
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
-# Habilitar el módulo PHP en Apache
-RUN a2enmod rewrite php8.2
+# Habilitar el módulo de rewrite de Apache (solo si no está habilitado)
+RUN a2enmod rewrite
 
 # Copiar los archivos del proyecto al contenedor
 COPY . /var/www/html/
@@ -19,6 +19,9 @@ RUN sed -i 's/Listen 80/Listen 8080/' /etc/apache2/ports.conf && \
 
 # Exponer el puerto 8080
 EXPOSE 8080
+
+# Reiniciar Apache para aplicar la configuración
+RUN service apache2 restart
 
 # Comando para ejecutar Apache en primer plano
 CMD ["apache2-foreground"]
