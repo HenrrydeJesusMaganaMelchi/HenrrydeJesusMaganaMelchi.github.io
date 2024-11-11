@@ -17,29 +17,29 @@
         $num2 = 3;
 
         // Suma
-        echo "Suma ($num1 + $num2): " . ($num1 + $num2) . "<br>";
+        echo "Suma ($num1 + $num2): La suma de $num1 y $num2 es " . ($num1 + $num2) . "<br>";
 
         // Resta
-        echo "Resta ($num1 - $num2): " . ($num1 - $num2) . "<br>";
+        echo "Resta ($num1 - $num2): La resta de $num1 menos $num2 es " . ($num1 - $num2) . "<br>";
 
         // Multiplicación
-        echo "Multiplicación ($num1 * $num2): " . ($num1 * $num2) . "<br>";
+        echo "Multiplicación ($num1 * $num2): El producto de $num1 y $num2 es " . ($num1 * $num2) . "<br>";
 
         // División
-        echo "División ($num1 / $num2): " . ($num1 / $num2) . "<br>";
+        echo "División ($num1 / $num2): La división de $num1 entre $num2 es " . ($num1 / $num2) . "<br>";
 
         // Módulo
-        echo "Módulo ($num1 % $num2): " . ($num1 % $num2) . "<br>";
+        echo "Módulo ($num1 % $num2): El resto de dividir $num1 entre $num2 es " . ($num1 % $num2) . "<br>";
 
         // Incremento (Pre y post)
-        echo "Incremento Pre (++$num1): " . (++$num1) . "<br>";
-        echo "Incremento Post ($num1++): " . ($num1++) . "<br>";
-        echo "Valor después de Post Incremento: $num1 <br>";
+        echo "Incremento Pre (++$num1): Antes de esta línea, el valor era 10. Incrementamos y ahora es " . (++$num1) . "<br>";
+        echo "Incremento Post ($num1++): Mostramos el valor actual ($num1) y luego incrementamos<br>";
+        echo "Valor después de Post Incremento: El valor ahora es $num1 <br>";
 
         // Decremento (Pre y post)
-        echo "Decremento Pre (--$num2): " . (--$num2) . "<br>";
-        echo "Decremento Post ($num2--): " . ($num2--) . "<br>";
-        echo "Valor después de Post Decremento: $num2 <br>";
+        echo "Decremento Pre (--$num2): Antes de esta línea, el valor era 3. Decrementamos y ahora es " . (--$num2) . "<br>";
+        echo "Decremento Post ($num2--): Mostramos el valor actual ($num2) y luego decrementamos<br>";
+        echo "Valor después de Post Decremento: El valor ahora es $num2 <br>";
         ?>
     </p>
 
@@ -50,31 +50,31 @@
         $b = "5";
 
         // Igual (==)
-        echo "Igual ($a == '$b'): " . ($a == $b ? 'true' : 'false') . "<br>";
+        echo "Igual ($a == '$b'): Compara si $a es igual a '$b' sin importar el tipo de dato. Resultado: " . ($a == $b ? 'true' : 'false') . "<br>";
 
         // Idéntico (===)
-        echo "Idéntico ($a === '$b'): " . ($a === $b ? 'true' : 'false') . "<br>";
+        echo "Idéntico ($a === '$b'): Compara si $a es igual a '$b' y si tienen el mismo tipo. Resultado: " . ($a === $b ? 'true' : 'false') . "<br>";
 
         // Distinto (<>)
-        echo "Distinto ($a <> '$b'): " . ($a <> $b ? 'true' : 'false') . "<br>";
+        echo "Distinto ($a <> '$b'): Verifica si $a es diferente a '$b'. Resultado: " . ($a <> $b ? 'true' : 'false') . "<br>";
 
         // Distinto (!=)
-        echo "Distinto ($a != '$b'): " . ($a != $b ? 'true' : 'false') . "<br>";
+        echo "Distinto ($a != '$b'): Igual que el anterior, verifica si $a es distinto de '$b'. Resultado: " . ($a != $b ? 'true' : 'false') . "<br>";
 
         // No idéntico (!==)
-        echo "No idéntico ($a !== '$b'): " . ($a !== $b ? 'true' : 'false') . "<br>";
+        echo "No idéntico ($a !== '$b'): Verifica si $a no es igual o no es del mismo tipo que '$b'. Resultado: " . ($a !== $b ? 'true' : 'false') . "<br>";
 
         // Mayor que
-        echo "Mayor que ($a > 4): " . ($a > 4 ? 'true' : 'false') . "<br>";
+        echo "Mayor que ($a > 4): Verifica si $a es mayor que 4. Resultado: " . ($a > 4 ? 'true' : 'false') . "<br>";
 
         // Menor que
-        echo "Menor que ($a < 10): " . ($a < 10 ? 'true' : 'false') . "<br>";
+        echo "Menor que ($a < 10): Verifica si $a es menor que 10. Resultado: " . ($a < 10 ? 'true' : 'false') . "<br>";
 
         // Mayor o igual
-        echo "Mayor o igual ($a >= 5): " . ($a >= 5 ? 'true' : 'false') . "<br>";
+        echo "Mayor o igual ($a >= 5): Verifica si $a es mayor o igual a 5. Resultado: " . ($a >= 5 ? 'true' : 'false') . "<br>";
 
         // Menor o igual
-        echo "Menor o igual ($a <= 5): " . ($a <= 5 ? 'true' : 'false') . "<br>";
+        echo "Menor o igual ($a <= 5): Verifica si $a es menor o igual a 5. Resultado: " . ($a <= 5 ? 'true' : 'false') . "<br>";
         ?>
     </p>
 
@@ -82,29 +82,27 @@
     <p>
         <?php
         $c = 10;
-
-        // Asignación
-        echo "Asignación (\$c = 10): $c <br>";
+        echo "Inicialización (\$c = 10): \$c es ahora $c <br>";
 
         // Suma y asignación
         $c += 5;
-        echo "Suma y asignación (\$c += 5): $c <br>";
+        echo "Suma y asignación (\$c += 5): \$c ahora es $c <br>";
 
         // Resta y asignación
         $c -= 2;
-        echo "Resta y asignación (\$c -= 2): $c <br>";
+        echo "Resta y asignación (\$c -= 2): \$c ahora es $c <br>";
 
         // Multiplicación y asignación
         $c *= 3;
-        echo "Multiplicación y asignación (\$c *= 3): $c <br>";
+        echo "Multiplicación y asignación (\$c *= 3): \$c ahora es $c <br>";
 
         // División y asignación
         $c /= 4;
-        echo "División y asignación (\$c /= 4): $c <br>";
+        echo "División y asignación (\$c /= 4): \$c ahora es $c <br>";
 
         // Módulo y asignación
         $c %= 3;
-        echo "Módulo y asignación (\$c %= 3): $c <br>";
+        echo "Módulo y asignación (\$c %= 3): \$c ahora es $c <br>";
         ?>
     </p>
 
@@ -113,15 +111,9 @@
         <?php
         $x = true;
         $y = false;
-
-        // AND
-        echo "AND (\$x && \$y): " . ($x && $y ? 'true' : 'false') . "<br>";
-
-        // OR
-        echo "OR (\$x || \$y): " . ($x || $y ? 'true' : 'false') . "<br>";
-
-        // NOT
-        echo "NOT (!\$x): " . (!$x ? 'true' : 'false') . "<br>";
+        echo "AND (\$x && \$y): Ambos deben ser true. Resultado: " . ($x && $y ? 'true' : 'false') . "<br>";
+        echo "OR (\$x || \$y): Al menos uno debe ser true. Resultado: " . ($x || $y ? 'true' : 'false') . "<br>";
+        echo "NOT (!\$x): Invierte el valor de \$x. Resultado: " . (!$x ? 'true' : 'false') . "<br>";
         ?>
     </p>
 
@@ -130,14 +122,9 @@
         <?php
         $texto1 = "Hola";
         $texto2 = " Mundo";
-
-        // Concatenación
-        $saludo = $texto1 . $texto2;
-        echo "Concatenación: $saludo <br>";
-
-        // Asignación con concatenación
+        echo "Concatenación (\$texto1 . \$texto2): Une dos cadenas. Resultado: " . ($texto1 . $texto2) . "<br>";
         $texto1 .= $texto2;
-        echo "Asignación con concatenación (\$texto1 .= \$texto2): $texto1 <br>";
+        echo "Asignación con concatenación (\$texto1 .= \$texto2): Añade \$texto2 a \$texto1. Resultado: $texto1 <br>";
         ?>
     </p>
 </body>
