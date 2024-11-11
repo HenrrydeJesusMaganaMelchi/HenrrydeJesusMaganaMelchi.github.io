@@ -17,22 +17,22 @@
         $num2 = 3;
 
         // Suma
-        echo "Suma ($num1 + $num2): La suma de $num1 y $num2 es " . ($num1 + $num2) . "<br>";
+        echo "La suma de $num1 mas $num2 es igual a: " . ($num1 + $num2) . "<br>";
 
         // Resta
-        echo "Resta ($num1 - $num2): La resta de $num1 menos $num2 es " . ($num1 - $num2) . "<br>";
+        echo "La resta de $num1 menos $num2 es igual a:" . ($num1 - $num2) . "<br>";
 
         // Multiplicación
-        echo "Multiplicación ($num1 * $num2): El producto de $num1 y $num2 es " . ($num1 * $num2) . "<br>";
+        echo "El producto de $num1 por $num2 es igual a: " . ($num1 * $num2) . "<br>";
 
         // División
-        echo "División ($num1 / $num2): La división de $num1 entre $num2 es " . ($num1 / $num2) . "<br>";
+        echo "La división de $num1 entre $num2 es igual a: " . ($num1 / $num2) . "<br>";
 
         // Módulo
-        echo "Módulo ($num1 % $num2): El resto de dividir $num1 entre $num2 es " . ($num1 % $num2) . "<br>";
+        echo "El resto de dividir $num1 entre $num2 es igual a: " . ($num1 % $num2) . "<br>";
 
         // Incremento (Pre y post)
-        echo "Incremento Pre (++$num1): Antes de esta línea, el valor era 10. Incrementamos y ahora es " . (++$num1) . "<br>";
+        echo "Incremento Pre : Antes de esta línea, el valor era $num1. Incrementamos y ahora es " . (++$num1) . "<br>";
         echo "Incremento Post ($num1++): Mostramos el valor actual ($num1) y luego incrementamos<br>";
         echo "Valor después de Post Incremento: El valor ahora es $num1 <br>";
 
