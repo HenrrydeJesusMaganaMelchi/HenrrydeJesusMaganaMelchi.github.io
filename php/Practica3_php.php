@@ -83,27 +83,24 @@
     <p>
         <?php
         $c = 10;
+        // Inicializacion
         echo "Inicialización (\$c = 10): \$c es ahora $c <br>";
-
+        
         // Suma y asignación
-        $c += 5;
-        echo "Suma y asignación (\$c += 5): \$c ahora es $c <br>";
-
+        echo "Suma y asignación (\$c + 5): Resultado es " . ($c + 5) . "<br>";
+        
         // Resta y asignación
-        $c -= 2;
-        echo "Resta y asignación (\$c -= 2): \$c ahora es $c <br>";
-
+        echo "Resta y asignación (\$c - 2): Resultado es " . ($c - 2) . "<br>";
+        
         // Multiplicación y asignación
-        $c *= 3;
-        echo "Multiplicación y asignación (\$c *= 3): \$c ahora es $c <br>";
-
+        echo "Multiplicación y asignación (\$c * 3): Resultado es " . ($c * 3) . "<br>";
+        
         // División y asignación
-        $c /= 4;
-        echo "División y asignación (\$c /= 4): \$c ahora es $c <br>";
-
+        echo "División y asignación (\$c / 4): Resultado es " . ($c / 4) . "<br>";
+        
         // Módulo y asignación
-        $c %= 3;
-        echo "Módulo y asignación (\$c %= 3): \$c ahora es $c <br>";
+        echo "Módulo y asignación (\$c % 3): Resultado es " . ($c % 3) . "<br>";
+        
         ?>
     </p>
 
