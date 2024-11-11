@@ -87,19 +87,19 @@
         echo "Inicialización (\$c = 10): \$c es ahora $c <br>";
         
         // Suma y asignación
-        echo "Suma y asignación (\$c + 5): Resultado es " . ($c + 5) . "<br>";
+        echo "Suma y asignación (\$c += 5): Resultado es " . ($c += 5) . "<br>";
         
         // Resta y asignación
-        echo "Resta y asignación (\$c - 2): Resultado es " . ($c - 2) . "<br>";
+        echo "Resta y asignación (\$c -= 2): Resultado es " . ($c -= 2) . "<br>";
         
         // Multiplicación y asignación
-        echo "Multiplicación y asignación (\$c * 3): Resultado es " . ($c * 3) . "<br>";
+        echo "Multiplicación y asignación (\$c *? 3): Resultado es " . ($c *= 3) . "<br>";
         
         // División y asignación
-        echo "División y asignación (\$c / 4): Resultado es " . ($c / 4) . "<br>";
+        echo "División y asignación (\$c /= 4): Resultado es " . ($c /= 4) . "<br>";
         
         // Módulo y asignación
-        echo "Módulo y asignación (\$c % 3): Resultado es " . ($c % 3) . "<br>";
+        echo "Módulo y asignación (\$c %= 3): Resultado es " . ($c %= 3) . "<br>";
         
         ?>
     </p>
