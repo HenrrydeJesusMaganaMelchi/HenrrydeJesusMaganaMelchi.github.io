@@ -32,12 +32,15 @@
         echo "El resto de dividir $num1 entre $num2 es igual a: " . ($num1 % $num2) . "<br>";
 
         // Incremento (Pre y post)
-        echo "Incremento Pre : Antes de esta línea, el valor era $num1. Incrementamos y ahora es " . (++$num1) . "<br>";
-        echo "Incremento Post : Mostramos el valor actual $num1 y luego incrementamos y como resultado nos daria: ".($num1++)." <br>";
+        echo "Incremento Pre: Antes de esta línea, el valor era 10. Incrementamos y ahora es " . (++$num1) . "<br>";
+
+        echo "Incremento Post: Mostramos el valor actual ($num1), luego incrementamos. Resultado mostrado: " . ($num1++) . ". Valor después del incremento: $num1 <br>";
 
         // Decremento (Pre y post)
-        echo "Decremento Pre: Antes de esta línea, el valor era $num2. Decrementamos y ahora es " . (--$num2) . "<br>";
-        echo "Decremento Post: Mostramos el valor actual $num2 y luego decrementamos y el resultado seria: ".($num2--)."<br>";
+        echo "Decremento Pre : Antes de esta línea, el valor era 3. Decrementamos y ahora es " . (--$num2) . "<br>";
+
+
+        echo "Decremento Post: Mostramos el valor actual ($num2), luego decrementamos. Resultado mostrado: " . ($num2--) . ". Valor después del decremento: $num2 <br>";
         ?>
     </p>
 
