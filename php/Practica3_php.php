@@ -37,7 +37,7 @@
 
         // Decremento (Pre y post)
         echo "Decremento Pre: Antes de esta línea, el valor era $num2. Decrementamos y ahora es " . (--$num2) . "<br>";
-        echo "Decremento Post: Mostramos el valor actual ($num2) y luego decrementamos y el resultado seria:".($num--)."<br>";
+        echo "Decremento Post: Mostramos el valor actual ($num2) y luego decrementamos y el resultado seria:".($num2--)."<br>";
         ?>
     </p>
 
