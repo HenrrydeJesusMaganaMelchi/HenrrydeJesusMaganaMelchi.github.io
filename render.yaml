@@ -7,7 +7,7 @@ services:
     branch: main
     buildCommand: ""
     startCommand: ""
-    dockerfilePath: ./Dockerfile
+    dockerfilePath: ./dockerfile
     envVars:
       - key: PORT
         value: 8080
