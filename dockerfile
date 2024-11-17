@@ -4,14 +4,15 @@ FROM php:8.2-apache
 # Habilitar el módulo mod_rewrite para Apache (importante para redirecciones)
 RUN a2enmod rewrite
 
-# Instalar las extensiones PHP necesarias (en caso de que uses base de datos o funciones PHP avanzadas)
-RUN docker-php-ext-install mysqli pdo pdo_mysql
+# Instalar las extensiones PHP necesarias para PostgreSQL
+RUN apt-get update && apt-get install -y \
+    libpq-dev \
+    && docker-php-ext-install pdo_pgsql pgsql
 
-# Copiar los archivos del proyecto al contenedor (esto incluye tus archivos HTML, PHP, CSS, JS, imágenes, etc.)
+# Copiar los archivos del proyecto al contenedor
 COPY . /var/www/html/
 
 # Cambiar el DocumentRoot para que apunte a la raíz del proyecto
-# Esto es importante para asegurar que Apache cargue el contenido correctamente
 RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html|' /etc/apache2/sites-available/000-default.conf
 
 # Cambiar los permisos de los archivos para que Apache pueda acceder a ellos
