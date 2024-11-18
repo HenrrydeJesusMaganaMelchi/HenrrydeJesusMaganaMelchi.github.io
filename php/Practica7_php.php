@@ -7,6 +7,6 @@
 </head>
 <body>
     <h1>Practica 7 - Creacion de una base de datos de manera local con php</h1>
-    <img width="500px" src="../img/creacionBD.png" alt="Captura de pantalla de creacion de una base de datos de manera local con php">
+    <img width="1000px" src="../img/creacionBD.png" alt="Captura de pantalla de creacion de una base de datos de manera local con php">
 </body>
 </html>
