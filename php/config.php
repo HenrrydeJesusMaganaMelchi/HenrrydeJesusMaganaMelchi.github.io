@@ -1,17 +1,10 @@
 <?php
-// Archivo config.php
-
-// Datos de conexión a la base de datos PostgreSQL usando las variables de entorno de Render
+// Datos de conexión a la base de datos PostgreSQL
 $host = getenv('DB_HOST'); 
 $dbname = getenv('DB_NAME');
 $user = getenv('DB_USER');
 $password = getenv('DB_PASSWORD');
 $port = getenv('DB_PORT');
-
-// Verificar si las variables de entorno no están vacías
-if (!$host || !$dbname || !$user || !$password || !$port) {
-    die("Error: Las variables de entorno no están correctamente configuradas.");
-}
 
 try {
     // Crear una nueva conexión PDO
