@@ -44,11 +44,11 @@ document.getElementById("myButton4").onclick = function() {
     // Redirige a la página especificada
     window.location.href = "php/Practica4_php.php";
   };
-  document.getElementById("myButto11").onclick = function() {
+  document.getElementById("myButton11").onclick = function() {
     // Redirige a la página especificada
-    window.location.href = "php/Practica4_php.php";
+    window.location.href = "php/Practica5_php.php";
   };
-  document.getElementById("myButto12").onclick = function() {
+  document.getElementById("myButton12").onclick = function() {
     // Redirige a la página especificada
     window.location.href = "php/Practica6_php.php";
   };
