@@ -1,26 +1,26 @@
 <?php
 // Archivo config.php
 
-// Obtener los datos de la base de datos desde las variables de entorno
-$host = getenv('DB_HOST');  // Debes utilizar la clave de la variable de entorno, no el valor
+// Datos de conexión a la base de datos PostgreSQL usando las variables de entorno de Render
+$host = getenv('DB_HOST'); 
 $dbname = getenv('DB_NAME');
 $user = getenv('DB_USER');
 $password = getenv('DB_PASSWORD');
-$port = getenv('DB_PORT');  // Asegúrate de que el puerto esté configurado correctamente
+$port = getenv('DB_PORT');
 
-// Verifica si las variables de entorno están siendo obtenidas
-echo "Host: " . $host . "<br>";
-echo "Database: " . $dbname . "<br>";
-echo "User: " . $user . "<br>";
-echo "Port: " . $port . "<br>";
+// Verificar si las variables de entorno no están vacías
+if (!$host || !$dbname || !$user || !$password || !$port) {
+    die("Error: Las variables de entorno no están correctamente configuradas.");
+}
 
 try {
-    // Crear una nueva conexión PDO con PostgreSQL
+    // Crear una nueva conexión PDO
     $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";
     $pdo = new PDO($dsn, $user, $password, [
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,  // Manejo de errores
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC  // Modo de obtención de datos
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
     ]);
+    echo "Conexión exitosa a la base de datos.";
 } catch (PDOException $e) {
     // Si ocurre un error, muestra el mensaje de error
     die("Error de conexión: " . $e->getMessage());
