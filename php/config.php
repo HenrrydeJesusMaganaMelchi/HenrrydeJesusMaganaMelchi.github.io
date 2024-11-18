@@ -1,19 +1,25 @@
 <?php
 // Archivo config.php
 
-// Datos de conexión a la base de datos PostgreSQL
-$host = getenv('dpg-cst746tds78s73cgsg8g-a'); 
-$dbname = getenv('prog_web_hjmm');
-$user = getenv('prog_web_hjmm_user');
-$password = getenv('GU8LJHs9xnY5IHFap4wV6OAmscHQm5MD');
-$port = getenv('5432');
+// Obtener los datos de la base de datos desde las variables de entorno
+$host = getenv('DB_HOST');  // Debes utilizar la clave de la variable de entorno, no el valor
+$dbname = getenv('DB_NAME');
+$user = getenv('DB_USER');
+$password = getenv('DB_PASSWORD');
+$port = getenv('DB_PORT');  // Asegúrate de que el puerto esté configurado correctamente
+
+// Verifica si las variables de entorno están siendo obtenidas
+echo "Host: " . $host . "<br>";
+echo "Database: " . $dbname . "<br>";
+echo "User: " . $user . "<br>";
+echo "Port: " . $port . "<br>";
 
 try {
-    // Crear una nueva conexión PDO
+    // Crear una nueva conexión PDO con PostgreSQL
     $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";
     $pdo = new PDO($dsn, $user, $password, [
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,  // Manejo de errores
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC  // Modo de obtención de datos
     ]);
 } catch (PDOException $e) {
     // Si ocurre un error, muestra el mensaje de error
