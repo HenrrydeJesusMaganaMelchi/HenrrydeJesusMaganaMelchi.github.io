@@ -6,6 +6,15 @@ $user = getenv('DB_USER');
 $password = getenv('DB_PASSWORD');
 $port = getenv('DB_PORT');
 
+
+// Mostrar todas las variables de entorno
+var_dump(getenv('DB_HOST'));
+var_dump(getenv('DB_NAME'));
+var_dump(getenv('DB_USER'));
+var_dump(getenv('DB_PASSWORD'));
+var_dump(getenv('DB_PORT'));
+
+
 try {
     // Crear una nueva conexión PDO
     $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";
