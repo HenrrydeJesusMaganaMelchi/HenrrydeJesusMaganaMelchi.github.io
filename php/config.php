@@ -2,11 +2,11 @@
 // Archivo config.php
 
 // Datos de conexión a la base de datos PostgreSQL
-$host = getenv('DB_HOST'); 
-$dbname = getenv('DB_NAME');
-$user = getenv('DB_USER');
-$password = getenv('DB_PASSWORD');
-$port = getenv('DB_PORT');
+$host = getenv('dpg-cst746tds78s73cgsg8g-a'); 
+$dbname = getenv('prog_web_hjmm');
+$user = getenv('prog_web_hjmm_user');
+$password = getenv('GU8LJHs9xnY5IHFap4wV6OAmscHQm5MD');
+$port = getenv('5432');
 
 try {
     // Crear una nueva conexión PDO

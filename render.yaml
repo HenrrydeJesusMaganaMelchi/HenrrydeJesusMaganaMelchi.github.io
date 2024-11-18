@@ -12,12 +12,12 @@ services:
       - key: PORT
         value: 8080
       - key: DB_HOST
-        value: tu-host.render.com
+        value: dpg-cst746tds78s73cgsg8g-a
       - key: DB_NAME
-        value: tu_nombre_de_base_de_datos
+        value: prog_web_hjmm
       - key: DB_USER
-        value: tu_usuario
+        value: prog_web_hjmm_user
       - key: DB_PASSWORD
-        value: tu_contraseña
+        value: GU8LJHs9xnY5IHFap4wV6OAmscHQm5MD
       - key: DB_PORT
         value: "5432"
