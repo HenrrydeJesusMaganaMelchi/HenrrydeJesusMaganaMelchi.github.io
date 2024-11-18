@@ -20,4 +20,4 @@ services:
       - key: DB_PASSWORD
         value: GU8LJHs9xnY5IHFap4wV6OAmscHQm5MD
       - key: DB_PORT
-        value: "5432"
+        value: 5432
