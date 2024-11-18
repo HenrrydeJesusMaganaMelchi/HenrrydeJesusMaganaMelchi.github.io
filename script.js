@@ -52,3 +52,7 @@ document.getElementById("myButton4").onclick = function() {
     // Redirige a la página especificada
     window.location.href = "php/Practica6_php.php";
   };
+  document.getElementById("myButton13").onclick = function() {
+    // Redirige a la página especificada
+    window.location.href = "php/Practica7_php.php";
+  };
