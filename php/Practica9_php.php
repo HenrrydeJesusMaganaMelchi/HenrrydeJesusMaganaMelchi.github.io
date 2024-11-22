@@ -8,33 +8,31 @@
 <body>
     <?php
     require("config.php");
+
     echo "<h1>Crear una tabla en una BD existente</h1>";
-    
-    // Conexión a PostgreSQL
-    $conexion = pg_connect("host=$servidor dbname=$BD user=$usuario password=$password");
-    if (!$conexion) {
-        die("Error al conectar a la base de datos: " . pg_last_error());
+
+    // Validar conexión
+    if (!isset($pdo)) {
+        die("Error: La conexión a la base de datos no está disponible.");
     }
 
     $tabla = "prueba1";
-    $consulta = "CREATE TABLE $tabla (
+
+    // Consulta para crear la tabla
+    $consulta = "CREATE TABLE IF NOT EXISTS $tabla (
         id SERIAL PRIMARY KEY,
         nombre VARCHAR(50) NOT NULL
     );";
 
-    // Ejecutar la consulta
-    $resultado = pg_query($conexion, $consulta);
-    if ($resultado) {
-        echo "La tabla $tabla se creó correctamente en la base de datos <br>";
-        echo "El Script utilizado fue: $consulta <br><br>";
-    } else {
-        echo "La tabla $tabla no se pudo crear correctamente <br>" . pg_last_error($conexion);
+    try {
+        // Ejecutar la consulta
+        $pdo->exec($consulta);
+        echo "La tabla <strong>$tabla</strong> se creó correctamente en la base de datos.<br>";
+        echo "El Script utilizado fue:<br><pre>$consulta</pre><br>";
+    } catch (PDOException $e) {
+        echo "Error al crear la tabla <strong>$tabla</strong>: " . $e->getMessage() . "<br>";
     }
 
-    echo "<br><br>";
-
-    // Cerrar conexión
-    pg_close($conexion);
     ?>
 </body>
 </html>
