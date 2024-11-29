@@ -16,12 +16,15 @@
         die("Error: La conexión a la base de datos no está disponible.");
     }
 
-    $tabla = "prueba1";
+    $tabla = "Alumno";
 
     // Consulta para crear la tabla
     $consulta = "CREATE TABLE IF NOT EXISTS $tabla (
         id SERIAL PRIMARY KEY,
-        nombre VARCHAR(50) NOT NULL
+        nombre VARCHAR(50) NOT NULL,
+        carrera VARCHAR(50) NOT NULL,
+        escuela VARCHAR(50) NOT NULL
+
     );";
 
     try {
